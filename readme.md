@@ -1,3 +1,5 @@
+# Work in PROGRESS!!!
+
 Follow the numbered instructions above for a step-by-step guide to setup:
 - Raspberry Pi Zero (Headless Setup, no additional monitor or keyboard required!)
 - Soil Sensor python program
