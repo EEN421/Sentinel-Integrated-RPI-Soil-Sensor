@@ -4,4 +4,4 @@ Follow the instructions in Master.md to setup:
 - Output to OLED
 - Output to Log Analytics Workspace with Sentinel enabled
 
-For LAW & Sentinel Cost Optimization use-cases and exercises, KQL breakdowns and more, visit my cyber security blog at www.devsecopsdad.com and follow me on Twitter @IanDHanley
+For LAW & Sentinel Cost Optimization use-cases and exercises, KQL breakdowns and more, visit my cyber security blog at www.devsecopsdad.com and follow me on [Twitter](https://twitter.com/IanDHanley) @IanDHanley and on [LinkedIn](https://www.linkedin.com/in/ianhanley/) @ in/ianhanley
