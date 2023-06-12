@@ -1,4 +1,4 @@
-Follow the instructions in Master_Setup.md to setup:
+Follow the numbered instructions above for a step-by-step guide to setup:
 - Raspberry Pi Zero
 - Soil Sensor python program
 - Output to OLED
