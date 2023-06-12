@@ -1,40 +1,52 @@
-# Update your system:
+# 1. Update your system:
+```python
 sudo apt-get update
 sudo apt-get upgrade
+```
 
-# If either of the above complete but with errors, try again with:
+# 2. (Optional) If either of the above complete but with errors, try again with:
+```python 
 sudo apt-get update --fix-missing
-#or
 sudo apt-get upgrade --fix-missing
+```
 
-# Set Localisation Options:
+# 3. Set Localisation Options:
+```python
 sudo raspi-config
-	> Localisation Options > US > Eastern > OK
+	> Localisation Options > TimeZone > US > Eastern > OK
+```
 
-# Soil Sensor Setup:
+# 4. Soil Sensor Setup:
+```python
 sudo apt-get install python3-pip
 sudo pip3 install --upgrade setuptools
 sudo apt-get install -y python-smbus
 sudo apt-get install -y i2c-tools
+```
 
-# Enable i2c interface (reboot first!):
+# 5. Enable i2c interface (reboot first!):
+```python
 sudo reboot -n
 sudo raspi-config
 	> Interfacing Options > I2C > Enable > OK
-
+```
+```python
 sudo pip3 install RPI.GPIO
 sudo pip3 install adafruit-blinka
 sudo pip3 install adafruit-circuitpython-busdevice
 sudo apt install git-all
 sudo git clone https://github.com/adafruit/Adafruit_CircuitPython_seesaw.git
 sudo pip3 install adafruit-circuitpython-seesaw
+```
 
-#To test hardware detection and return hardware addresses:
+# 6. To test hardware detection and return hardware addresses:
+```python
 sudo i2cdetect -y 1
 #Soil Sensor should populate on x36
+```
 
-
-# OLED Screen Install:
+# 7. OLED Screen Install:
+```python
 #To test hardware detection and return hardware addresses:
 sudo i2cdetect -y 1
 #Soil Sensor should populate on x3c
@@ -42,23 +54,29 @@ sudo i2cdetect -y 1
 sudo pip3 install adafruit-circuitpython-ssd1306
 sudo apt-get install python3-pil
 sudo pip3 install requests
+```
 
-# Grab and unzip silkscreen font to clean up txt display:
+# 8. Grab and unzip silkscreen font to clean up txt display:
+```python
 wget http://kottke.org/plus/type/silkscreen/download/silkscreen.zip
 unzip silkscreen.zip
+```
 
-# Build your OLEDstats.py file
+# 9. Build your OLEDstats.py file
+```python
 sudo nano OLEDstats.py
+```
 
-# Run this file when you want to start the display:
+# 10. Run this file when you want to start the display:
+```python
 sudo python3 OLEDstats.py
+```
 
-# Append the above command to /etc/rc.local to start on boot:
+# 11. Append the above command to /etc/rc.local to start on boot:
+```python
 sudo nano /etc/rc.local
 	sudo python3 OLEDstats.py
-
-
-
+```
 
 
 # Install Ruby
