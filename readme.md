@@ -1,5 +1,5 @@
 Follow the numbered instructions above for a step-by-step guide to setup:
-- Raspberry Pi Zero
+- Raspberry Pi Zero (Headless Setup, no additional monitor or keyboard required!)
 - Soil Sensor python program
 - Output to OLED
 - Output to Log Analytics Workspace with Sentinel enabled
