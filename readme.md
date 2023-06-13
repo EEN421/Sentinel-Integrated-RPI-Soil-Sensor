@@ -6,6 +6,8 @@ Follow the numbered instructions above for a step-by-step guide to setup:
 - OLED Display Output
 - Output to Log Analytics Workspace with Sentinel enabled
 
+For Azure Log Analytics Workspace & Sentinel Cost Optimization use-cases and exercises, KQL breakdowns and more, visit my cyber security blog at www.devsecopsdad.com and follow me on [Twitter](https://twitter.com/IanDHanley) and [LinkedIn](https://www.linkedin.com/in/ianhanley/) 
+
 ![](/assets/img/ReadMe0.jpg)
 ![](/assets/img/ReadMe1.jpg)
 ![](/assets/img/ReadMe2.jpg)
@@ -13,4 +15,4 @@ Follow the numbered instructions above for a step-by-step guide to setup:
 ![](/assets/img/ReadMe4.jpg)
 ![](/assets/img/ReadMe5.jpg)
 
-For LAW & Sentinel Cost Optimization use-cases and exercises, KQL breakdowns and more, visit my cyber security blog at www.devsecopsdad.com and follow me on [Twitter](https://twitter.com/IanDHanley) and [LinkedIn](https://www.linkedin.com/in/ianhanley/) 
+
