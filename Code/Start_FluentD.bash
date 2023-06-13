@@ -1,1 +1,1 @@
-sudo fluentd -c /etc/fluentd.conf --log /var/log/td-agent/fluent.log
+sudo fluentd -c /etc/fluent.conf --log /var/log/td-agent/fluent.log
