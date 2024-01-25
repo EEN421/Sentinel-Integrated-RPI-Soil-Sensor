@@ -20,8 +20,8 @@ import adafruit_ssd1306
 i2c = busio.I2C(SCL, SDA)
 
 # Create the SSD1306 OLED class
-# The first two parameters are the pixel width and pixel height.
-# Change these to the right size for your display!
+# The first two parameters are the pixel width and pixel height.  Change these
+# to the right size for your display!
 disp = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
 
 # Clear display
@@ -51,7 +51,7 @@ x = 0
 # Default font. Commented out while slkscr.ttf is in use
 #font = ImageFont.load_default()
 
-# Load silkscreen font (looks better than the default)
+# Load silkscreen font.
 font = ImageFont.truetype('/home/pi/Adafruit_CircuitPython_seesaw/font/slkscr.ttf', 8)
 
 while True:
@@ -86,5 +86,5 @@ while True:
 
     #log time and moisture readings to /varlog/soil.log
     logging.basicConfig(filename='/var/log/soil.log',level=logging.INFO, format='%(message)s')
-    logging.info(current_time.strftime("%b") + " " + current_time.strftime("%-d") + " " + current_time.strftime("%H:%M:%S") + " " + "    Temp: " + str('%.2f'%temp) + "    moisture: " + str('%.2f'%touch))
+    logging.info(current_time.strftime("%b") + " " + current_time.strftime("%-d") + " " + current_time.strftime("%H:%M:%S") + " " + "    Temp: " + str('Temperature: %.2f'%temp) + "    Moisture: " + str('%.2f'%touch))
     time.sleep(5)
